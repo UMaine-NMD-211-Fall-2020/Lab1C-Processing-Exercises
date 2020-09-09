@@ -20,7 +20,8 @@ Define it in terms of global variables.
 Comment those.
 Run code to make sure everything still works.
 6. Add a scalar global variable. Comment. Scale the shape with every run through draw.
-7. Make a color changing scalar, and change the color with every run through draw.
+7. Make a color changing scalar, and change the color with every run through draw. 
+If the last scalar was a float, make this one an int and vice versa
 8. Play with the variables. Get comfortable. Have fun with it. Turn in an example you are proud of. Can use multiple shapes.
 
 ## Example Submission
