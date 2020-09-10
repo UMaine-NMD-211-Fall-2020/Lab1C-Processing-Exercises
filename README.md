@@ -81,7 +81,7 @@ void draw(){
   rect( 100, 500, 100, 100);   // (x, y, w, h)
   
   // triangle
-  triangle( 50, 950, 100, 850, 150, 950);
+  triangle( 50, 950, 100, 850, 150, 950); //(x1, y1, x2, y2, x3, y3)
 }
 ```
 5. Pick one part of the definition of the shape, not of the location. 
