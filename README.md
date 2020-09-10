@@ -136,10 +136,75 @@ void draw(){
 ```
 7. (OPTIONAL) Make a color changing scalar, and change the color with every run through draw. 
 If the last scalar was a float, make this one an int and vice versa
-8. Play with the variables. Get comfortable. Have fun with it. Turn in an example you are proud of. Can use multiple shapes.
+8. Play with the variables. Get comfortable. Have fun with it. Turn in an example you are proud of. Can use multiple shapes.  Play with it until you understand how to put the graphics where you want, at the scale you want. 
 
-## Example Submission
-[Lab 1AC Example Submission](https://github.com/UMaine-NMD-211-Fall-2020/Lab1AC-ExampleFolder) - it has a typo 
-in the processing file's comments, but apart from that, should work as a reference
+*The example code below shows you don't need to do much to make interesting graphics*
+```processing
+/* Lab 1AC
+Katarina Hoeger
+Scale many shapes example 
+- contains scaled ellipse
+- contains scaled rectangle
+- contains scaled triangle
+*/
 
+// scalars
+float small = 0.5;
+int med = 2;
+int huge = 10;
 
+void setup(){
+  // drawing surface size and color
+  size(1000, 1000);
+  background(0, 0, 0);
+  
+  // initial settings
+  noStroke();           // no object outlines
+  ellipseMode(CENTER);  // draw ellipses from center
+  rectMode(CENTER);     // draw rectangles from center 
+}
+
+void draw(){
+  /* Since this is an example,
+  I will draw 1 of each shape 
+  I need an example for.
+  You just need one shape. */
+  
+  // --- ellipse 
+  // set fill color
+  fill( 255, 0, 0, 100);
+  // left
+  ellipse( 100, 100, 100, small*100); // (x, y, r1, r2)
+  // center
+  ellipse( 500, 100, 100, med*100);
+  // right
+  ellipse( 900, 100, 100, huge*100);
+  
+  // --- rectangle
+  // set fill color
+  fill( 100, 255, 200, 100);
+  //left 
+  rect( 100, 500, 100, med*100);   // (x, y, w, h)
+  //center
+  rect( 500, 500, 100, huge*100);
+  //right
+  rect( 900, 500, 100, small*100);
+  
+  
+  // --- triangle
+  // set fill color
+  fill( 200, 100, 255, 100);
+  // left
+  triangle( huge*50, 950, huge*100, 850, huge*150, 950); // (x1, y1, x2, y2, x3, y3)
+  // center <- ends up leftmost due to scalar
+  triangle( small*50, 950, small*100, 850, small*150, 950);
+  // right  <- ends up middle due to scalar
+  triangle( med*50, 950, med*100, 850, med*150, 950);
+}
+```
+
+## Extra Example Submission
+[Additional Lab 1AC Example Submission, with global variables defining everything and changing sizes and colors.](https://github.com/UMaine-NMD-211-Fall-2020/Lab1AC-ExampleFolder) - this is an advanced example of what can be done
+
+## Student Lab Submission links
+[1AC-Katarina-Hoeger](https://github.com/UMaine-NMD-211-Fall-2020/Lab1AC-ExampleFolder) (an example of how to submit this lab)
