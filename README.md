@@ -68,10 +68,11 @@ void draw(){
   // set fill color
   fill( 255, 0, 0, 200);
   
-  /* Since this is an example,
-  I will draw 1 of each shape 
-  I need an example for.
-  You just need one shape. */
+  /* Since this is an example, I will draw 1 of each shape.
+  I need an example for each shape. You just need one shape. 
+  Do not just copy my example - use the same technique, make your shape and placement. 
+  Use colors. Place shapes anywhere on the canvas.
+  Feel free to have fun with this exercise. */
   
   // ellipse
   ellipse( 100, 100, 100, 100); // (x, y, r1, r2)
