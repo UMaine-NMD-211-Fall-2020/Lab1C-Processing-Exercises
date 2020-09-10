@@ -11,6 +11,16 @@ Some basic processing exercises and an example.
 ## Exercise 
 1. In `1AC-*YOUR FIRST NAME*-*YOUR LAST NAME*`, start a processing document. 
 2. In the comment section at the top, include the lab number, your name, and a description of what you are drawing.
+```
+/*  Lab 1AC 
+    Katarina Hoeger
+    
+    Scale many shapes example 
+    - contains scaled ellipse
+    - contains scaled rectangle
+    - contains scaled triangle
+*/
+```
 3. Set up your drawing area (size & background color). Add any extra default settings here.
 4. Draw & fill a shape, placing it somewhere specific on the canvas. Comment it.
 5. Pick one part of the definition of the shape, not of the location. 
