@@ -22,6 +22,27 @@ Some basic processing exercises and an example.
 */
 ```
 3. Set up your drawing area (size & background color). Add any extra default settings here.
+```processing
+/*  Lab 1AC 
+    Katarina Hoeger
+    
+    Scale many shapes example 
+    - contains scaled ellipse
+    - contains scaled rectangle
+    - contains scaled triangle
+*/
+
+void setup(){
+  // drawing surface size and color
+  size(1000, 1000);
+  background(0, 0, 0);
+  
+  // initial settings
+  noStroke();           // no object outlines
+  ellipseMode(CENTER);  // draw ellipses from center
+  rectMode(CENTER);     // draw rectangles from center 
+}
+```
 4. Draw & fill a shape, placing it somewhere specific on the canvas. Comment it.
 5. Pick one part of the definition of the shape, not of the location. 
 If it's an ellipse, choose at least one radius. 
