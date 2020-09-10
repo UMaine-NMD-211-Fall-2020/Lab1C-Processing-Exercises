@@ -84,14 +84,57 @@ void draw(){
   triangle( 50, 950, 100, 850, 150, 950); //(x1, y1, x2, y2, x3, y3)
 }
 ```
-5. Pick one part of the definition of the shape, not of the location. 
+5. **OPTIONAL STEP** (skipped in this example - need not define in terms of global variables. It would make it easier to move everything. ) Pick one part of the definition of the shape, not of the location. 
 If it's an ellipse, choose at least one radius. 
 If it's a rectangle or triangle, one leg. 
 Define it in terms of global variables.
 Comment those.
 Run code to make sure everything still works.
 6. Add a scalar global variable. Comment. Scale the shape with every run through draw.
-7. Make a color changing scalar, and change the color with every run through draw. 
+```processing
+/* Lab 1AC
+Katarina Hoeger
+Scale many shapes example 
+- contains scaled ellipse
+- contains scaled rectangle
+- contains scaled triangle
+*/
+
+/* !!!!!! --- CHANGES HERE !!!! --- */
+// scalars
+float small = 0.5;
+int med = 2;
+int huge = 10;
+
+void setup(){
+  // drawing surface size and color
+  size(1000, 1000);
+  background(0, 0, 0);
+  
+  // initial settings
+  noStroke();           // no object outlines
+  ellipseMode(CENTER);  // draw ellipses from center
+  rectMode(CENTER);     // draw rectangles from center 
+}
+
+void draw(){
+  // set fill color
+  fill( 255, 0, 0, 200);
+  
+  /* !!!!!! --- CHANGES HERE !!!! --- */
+  // ellipse
+  ellipse( 100, 100, 100, small*100); // (x, y, r1, r2)
+  
+  /* !!!!!! --- CHANGES HERE !!!! --- */
+  // rectangle
+  rect( 100, 500, 100, med*100);   // (x, y, w, h)
+  
+  /* !!!!!! --- CHANGES HERE !!!! --- */
+  // triangle
+  triangle( huge*50, 950, huge*100, 850, huge*150, 950); // (x1, y1, x2, y2, x3, y3)
+}
+```
+7. (OPTIONAL) Make a color changing scalar, and change the color with every run through draw. 
 If the last scalar was a float, make this one an int and vice versa
 8. Play with the variables. Get comfortable. Have fun with it. Turn in an example you are proud of. Can use multiple shapes.
 
