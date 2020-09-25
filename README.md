@@ -207,4 +207,5 @@ void draw(){
 [Additional Lab 1AC Example Submission, with global variables defining everything and changing sizes and colors.](https://github.com/UMaine-NMD-211-Fall-2020/Lab1AC-ExampleFolder) - this is an advanced example of what can be done
 
 ## Student Lab Submission links
-[1AC-Katarina-Hoeger](https://github.com/UMaine-NMD-211-Fall-2020/Lab1AC-ExampleFolder) (an example of how to submit this lab)
+Link to your lab below, as shown in my example. 
+- [1AC-Katarina-Hoeger](https://github.com/UMaine-NMD-211-Fall-2020/Lab1AC-ExampleFolder) 
